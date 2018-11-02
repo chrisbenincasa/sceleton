@@ -63,9 +63,9 @@ class StringTransformTests extends FreeSpec with Matchers {
     "can apply the package transformation" in {
       val packaged = StringTransforms.packagedFunc
 
-      packaged("com.chrisbenincasa") shouldEqual "com.chrisbenincasa"
-      packaged("com.chrisbenincasa.tools") shouldEqual "com.chrisbenincasa/tools"
-      packaged("com.chrisbenincasa/tools") shouldEqual "com.chrisbenincasa/tools"
+      packaged("com.chrisbenincasa") shouldEqual "com/chrisbenincasa"
+      packaged("com.chrisbenincasa.tools") shouldEqual "com/chrisbenincasa/tools"
+      packaged("com.chrisbenincasa/tools") shouldEqual "com/chrisbenincasa/tools"
       packaged("simple") shouldEqual "simple"
       packaged("") shouldEqual ""
       packaged("spec!al.ch@rs") shouldEqual "spec!al/ch@rs"
