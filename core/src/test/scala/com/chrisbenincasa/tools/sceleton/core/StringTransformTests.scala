@@ -1,6 +1,7 @@
 package com.chrisbenincasa.tools.sceleton.core
 
 import com.chrisbenincasa.tools.sceleton.gen.StringTransforms
+import org.scalatest.{FreeSpec, Matchers}
 
 class StringTransformTests extends FreeSpec with Matchers {
   "StringTransforms" - {
